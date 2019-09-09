@@ -1,0 +1,8 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C1";"CP_Elec_6.3x5.4";1;"220uF";;;
+2;"D1";"D_SOD-123F";1;"1N4007L";;;
+3;"J1";"JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal";1;"JST_PH";;;
+4;"L1";"JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal";1;"solenoid";;;
+5;"Q1";"SOT-23_Handsoldering";1;"FDN339AN";;;
+6;"J2";"PinHeader_1x03_P2.54mm_Vertical";1;"0.1" header";;;
+7;"R1";"R_1206_3216Metric_Pad1.42x1.75mm_HandSolder";1;"22R";;;
