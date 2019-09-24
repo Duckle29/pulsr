@@ -1,5 +1,6 @@
-EESchema Schematic File Version 4
-EELAYER 29 0
+EESchema Schematic File Version 5
+LIBS:solenoid-board-cache
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -12,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L Device:L_Small L1
@@ -48,7 +54,7 @@ Wire Wire Line
 Wire Wire Line
 	7325 2600 7325 2575
 $Comp
-L Device:Q_NMOS_GDS Q1
+L Device:Q_NMOS_GSD Q1
 U 1 1 5D7821F6
 P 7300 2825
 F 0 "Q1" H 7506 2871 50  0000 L CNN
@@ -92,7 +98,7 @@ Connection ~ 7325 2325
 Wire Wire Line
 	6875 2575 6875 3075
 Wire Wire Line
-	6875 3075 7400 3075
+	6875 3075 7050 3075
 Wire Wire Line
 	7400 3075 7400 3025
 $Comp
@@ -142,7 +148,7 @@ F 3 "~" H 5875 2950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 2825 7025 2825
+	7100 2825 7050 2825
 Wire Wire Line
 	6875 2325 6875 2275
 Wire Wire Line
@@ -216,4 +222,25 @@ Wire Wire Line
 	6125 2800 6125 2850
 Wire Wire Line
 	6125 2850 6075 2850
+$Comp
+L Device:R_Small R2
+U 1 1 5D89CC76
+P 7050 2950
+F 0 "R2" H 6991 2904 50  0000 R CNN
+F 1 "10k" H 6991 2995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7050 2950 50  0001 C CNN
+F 3 "~" H 7050 2950 50  0001 C CNN
+	1    7050 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7050 2850 7050 2825
+Connection ~ 7050 2825
+Wire Wire Line
+	7050 3050 7050 3075
+Connection ~ 7050 3075
+Wire Wire Line
+	7050 3075 7400 3075
+Wire Wire Line
+	6975 2825 7050 2825
 $EndSCHEMATC
