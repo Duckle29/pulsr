@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:pulsr-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,11 +13,6 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
-Comment5 ""
-Comment6 ""
-Comment7 ""
-Comment8 ""
-Comment9 ""
 $EndDescr
 $Comp
 L Device:L_Small L1
@@ -29,17 +24,6 @@ F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 7325 2450 50  0001
 F 3 "~" H 7325 2450 50  0001 C CNN
 	1    7325 2450
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D1
-U 1 1 5D77CF7E
-P 7400 2450
-F 0 "D1" V 7325 2425 50  0000 R CNN
-F 1 "1N4007L" V 7475 2425 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123F" V 7400 2450 50  0001 C CNN
-F 3 "~" V 7400 2450 50  0001 C CNN
-	1    7400 2450
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	7325 2350 7325 2300
@@ -212,8 +196,8 @@ L Device:CP_Small C1
 U 1 1 5D78C611
 P 6825 2450
 F 0 "C1" H 6600 2500 50  0000 L CNN
-F 1 "220uF" H 6525 2400 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.4" H 6825 2450 50  0001 C CNN
+F 1 "FC0H473ZFTBR24" V 6750 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 6825 2450 50  0001 C CNN
 F 3 "~" H 6825 2450 50  0001 C CNN
 	1    6825 2450
 	1    0    0    -1  
@@ -243,4 +227,17 @@ Wire Wire Line
 Connection ~ 6825 2300
 Wire Wire Line
 	6825 2300 6825 2350
+Text Notes 6500 2625 0    50   ~ 0
+47mF\n5.5v
+$Comp
+L Device:D_Small D1
+U 1 1 5D77CF7E
+P 7400 2450
+F 0 "D1" V 7325 2425 50  0000 R CNN
+F 1 "1N4007L" V 7475 2425 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123F" V 7400 2450 50  0001 C CNN
+F 3 "~" V 7400 2450 50  0001 C CNN
+	1    7400 2450
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
